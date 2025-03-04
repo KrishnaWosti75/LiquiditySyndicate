@@ -1,0 +1,309 @@
+/* Gradient Background */
+.gradientBackground {
+    background: linear-gradient(135deg, #141414, #1e1e1e);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+/* Big-Ass Card */
+.container {
+    display: flex;
+    max-width: 1100px;
+    background: white;
+    color: black;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Contact Form */
+.contactForm {
+    flex: 1;
+    padding: 30px;
+    border-right: 2px solid #ddd;
+}
+
+.contactForm h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: rgb(0, 0, 0);
+}
+
+.contactForm p {
+    color: #333;
+}
+
+.contactForm form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contactForm input,
+.contactForm textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 1rem;
+    background: #f8f8f8;
+    color: black;
+}
+
+.submitButton {
+    padding: 12px;
+    background: black;
+    color: white;
+    border: 2px solid gold;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.submitButton:hover {
+    background: gold;
+    color: black;
+}
+
+.submitButton:disabled {
+    background: gray;
+    border-color: gray;
+    cursor: not-allowed;
+}
+
+/* Animated Success Message */
+.successMessage {
+    font-size: 1rem;
+    color: green;
+    margin-top: 10px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.fadeIn {
+    opacity: 1 !important;
+}
+
+/* Right Section - Contact Info & Socials */
+.infoSection {
+    flex: 1;
+    padding: 30px;
+    text-align: center;
+}
+
+.contactInfo,
+.socialLinks {
+    margin-bottom: 20px;
+}
+
+.contactInfo h2,
+.socialLinks h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: rgb(61, 52, 0);
+}
+
+.contactInfo p {
+    font-size: 1rem;
+    margin: 5px 0;
+    color: black;
+}
+
+.contactInfo a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.socialLinks .icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.socialLinks img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.socialLinks img:hover {
+    transform: scale(1.1);
+}
+
+/* FAQ Section */
+.faqSection {
+    max-width: 900px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.faqSection h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: gold;
+}
+
+.faq {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.faq details {
+    background: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.faq summary {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: black;
+}
+
+.faq p {
+    margin-top: 5px;
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .contactForm {
+        border-right: none;
+        border-bottom: 2px solid #ddd;
+        padding-bottom: 30px;
+    }
+
+    .infoSection {
+        padding-top: 30px;
+    }
+}
+
+/* Social Section */
+.socialSection {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.socialSection h2 {
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+    margin-bottom: 15px;
+}
+
+/* Social Cards */
+.socialCards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.socialCard {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    width: 250px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.socialCard:hover {
+    transform: scale(1.05);
+}
+
+.socialCard img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.socialCard h3 {
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+    color: black;
+}
+
+.socialCard p {
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+/* Join Button */
+.joinButton {
+    display: inline-block;
+    padding: 10px 15px;
+    background: black;
+    color: white;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.joinButton:hover {
+    background: gold;
+    color: black;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .socialCards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .socialCard {
+        width: 90%;
+    }
+}
+
+/* Success Message Animation */
+.successMessage {
+    font-size: 16px;
+    margin-top: 10px;
+    color: #4caf50;
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Discord Icon */
+.discordIcon {
+    font-size: 50px;
+    color: #5865F2;
+    /* Discord Blue */
+    margin-bottom: 10px;
+}

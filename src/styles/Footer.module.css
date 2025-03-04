@@ -1,0 +1,149 @@
+/* General Footer Styling */
+.footer {
+    background-color: #042422;
+    /* Deep brown */
+    color: white;
+    padding: 3rem 2rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+/* Left Section: Logo & Newsletter */
+.footerLeft {
+    flex: 1;
+    max-width: 300px;
+}
+
+.footerLeft h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: gold;
+}
+
+.footerLeft p {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    opacity: 0.8;
+}
+
+.newsletterForm {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.newsletterForm input {
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.newsletterForm button {
+    background-color: gold;
+    color: black;
+    font-weight: bold;
+    border: none;
+    padding: 0.8rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+.newsletterForm button:hover {
+    background-color: white;
+}
+
+/* Center Section: Footer Links */
+.footerCenter {
+    flex: 1;
+    text-align: center;
+}
+
+.footerLinks {
+    list-style: none;
+    padding: 0;
+}
+
+.footerLinks li {
+    margin-bottom: 1rem;
+}
+
+.footerLinks a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: color 0.3s ease-in-out;
+}
+
+.footerLinks a:hover {
+    color: gold;
+}
+
+/* Right Section: Social Media */
+.footerRight {
+    flex: 1;
+    text-align: right;
+}
+
+.footerRight h3 {
+    font-size: 1.4rem;
+    color: gold;
+}
+
+.socialLinks {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+    margin-top: 1rem;
+}
+
+.socialLinks a {
+    color: #c4a47c;
+    /* Slight brown accent */
+    transition: transform 0.3s ease-in-out;
+}
+
+.socialLinks a:hover {
+    transform: scale(1.2);
+    color: gold;
+}
+
+/* Copyright Section */
+.copyright {
+    text-align: center;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footerLeft,
+    .footerCenter,
+    .footerRight {
+        max-width: 100%;
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+
+    .socialLinks {
+        justify-content: center;
+    }
+}
